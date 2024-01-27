@@ -26,8 +26,8 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 
   const mileageFactor = 0.1; // Additional rate per mile
 
-  const ageFactor = 0.05; // Additional rate per year of vehicle age
-
+const ageFactor = 0.05; // Additional rate per year of vehicle age`1` !  
+``
   // Calculate additional rate based on mileage and age
   const mileageRate = city_mpg * mileageFactor;
   const ageRate = (new Date().getFullYear() - year) * ageFactor;
@@ -39,7 +39,7 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 };
 
 export const generateCarImageUrl = (car: CarProps, angle?: string) => {
-    const url = new URL('PUT YOUR OWN URL HERE');
+    const url = new URL('PUT YOUR OWN KEY HERE');
 
     const { make, year, model } = car;
 
